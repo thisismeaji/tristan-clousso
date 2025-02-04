@@ -18,6 +18,8 @@ body{
 header{
     position: fixed;
     width: 100%;
+    background-color: var(--primary);
+    z-index: 1000;
 }
 
 h1{
