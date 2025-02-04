@@ -1,5 +1,5 @@
 .section{
-    padding: 13rem 2rem;
+    padding: 15rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,72 +8,62 @@
 
 .hero{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: right;
+    gap: 5rem;
 }
 
 .heroText{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 25rem;
-}
-
-.heroText > div{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .heroImage img{
-    position: absolute;
-    z-index: -1;
     max-width: 30rem;
     max-height: 20rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform-origin: left;
 }
 
+
+
 @media screen and (min-width:786px) and (max-width:1200px){
+
+    .section{
+        padding: 10rem 2rem 7rem 2rem;
+    }
+
+    .hero{
+        gap: 4rem;
+    }
+
     .heroImage img{
         max-width: 25rem;
         max-height: 17rem;
-    }
-
-    .heroText{
-        height: 22rem;
-    }
-
-    .heroText > div{
-        gap: 1rem;
     }
 }
 
 @media screen and (max-width:786px){
 
     .section{
-        padding: 10rem 1.5rem;
+        padding: 7rem 1.5rem 3rem 1.5rem;
     }
 
-    .heroText{
-        gap: 10rem;
+    .hero{
+        flex-direction: column-reverse;
+        text-align: left;
+        gap: 1rem;
+        align-items: flex-start;
     }
 
     .heroImage img{
-        max-width: 20rem;
-        max-height: 14rem;
+        width: 100%;
+        max-width: none;
+        max-height: none;
+        height: 100%;
     }
 
-    .heroText{
-        height: 18rem;
-    }
-
-    .heroText > div{
-        gap: 1rem;
+    .heroText {
+        gap: 0.5rem;
     }
 }

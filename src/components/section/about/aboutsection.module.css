@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem 5rem 2rem;
+    padding: 0 2rem 10rem 2rem;
 }
 
 .about{
@@ -11,94 +11,62 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.about div:nth-of-type(1){
-    display: flex;
     gap: 5rem;
-    max-width: 1000px;
-    width: 100%;
 }
 
-.about div:nth-of-type(1) h1{
-    max-width: 15rem;
-}
-
-.about div:nth-of-type(1) img{
+.aboutImage img{
     max-width: 30rem;
     max-height: 20rem;
-} 
+}
 
-.about div:nth-of-type(2){
+.aboutText{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 5rem;
-    width: 100%;
-    max-width: 800px;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.about div:nth-of-type(2) p{
-    max-width: 25rem;
+.aboutText p{
+    max-width: 600px;
 }
 
-.about div:nth-of-type(2) img{
-    max-width: 15rem;
-    max-height: 20rem;
-} 
 
 @media screen and (min-width:786px) and (max-width:1200px){
 
-    .about div:nth-of-type(1){
-        gap: 2rem;
-        max-width: none;
-        width: fit-content;
+    .section{
+        padding: 0 2rem 7rem 2rem;
     }
 
-    .about div:nth-of-type(2){
-        gap: 2rem;
+    .about{
+        gap: 4rem;
     }
-    .about div:nth-of-type(1) img{
-        max-width: 20rem;
-        max-height: 13rem;
-    } 
 
-    .about div:nth-of-type(2) img{
-        max-width: 10rem;
-        max-height: 15rem;
-    } 
+    .aboutImage img{
+        max-width: 25rem;
+        max-height: 16rem;
+    }
+
 }
 
 
 @media screen and (max-width:786px){
 
+    .section{
+        padding: 0 1.5rem 3rem 1.5rem;
+    }
+
     .about{
         gap: 1rem;
-    }
-    .about div:nth-of-type(1){
-        flex-direction: column-reverse;
-        gap: 2rem;
-    }
-    .about div:nth-of-type(2){
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 2rem;
     }
 
-    .about div:nth-of-type(1) img{
+    .aboutImage img{
         width: 100%;
-        max-width: none;
         height: 100%;
+        max-width: none;
         max-height: none;
     }
 
-    .about div:nth-of-type(2) img{
-        width: 100%;
+    .aboutText p{
         max-width: none;
-        height: 100%;
-        max-height: none;
     }
 }

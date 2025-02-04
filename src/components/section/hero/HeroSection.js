@@ -8,10 +8,8 @@ export default function HeroSection() {
         <div className={Styles.hero}>
             <div className={Styles.heroText}>
                 <h1>Tristan Clousso</h1>
-                <div>
-                    <h1>PORTFOLIO</h1>
-                    <p>Illustrator and Designer</p>
-                </div>
+                <h2>PORTFOLIO</h2>
+                <p>Illustrator and Designer</p>
             </div>
             <div className={Styles.heroImage}>
                 <Image
